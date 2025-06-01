@@ -6,3 +6,4 @@ override.tf
 override.tf.json
 *.tfvars
 *.tfvars.json
+.idea/
