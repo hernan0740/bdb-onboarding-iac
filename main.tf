@@ -28,6 +28,7 @@ resource "aws_s3_bucket_ownership_controls" "frontend_bucket_acl" {
   }
 }
 
+
 resource "aws_s3_bucket_policy" "frontend_bucket_policy" {
   bucket = aws_s3_bucket.frontend_bucket.id
 
@@ -45,6 +46,7 @@ resource "aws_s3_bucket_policy" "frontend_bucket_policy" {
   })
 }
 
+
 # SSH KEY PAIR
 ##############
 
@@ -52,6 +54,7 @@ resource "aws_key_pair" "kata_key" {
   key_name   = "key-kata-25"
   public_key = file("~/.ssh/key-kata-25.pub")
 }
+
 
 ###################
 # SECURITY GROUP - EC2
