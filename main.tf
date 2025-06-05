@@ -139,7 +139,7 @@ resource "aws_db_instance" "default" {
   instance_class     = "db.t3.micro"
   allocated_storage  = 20
   username           = "hernan"
-  password           = "hchapid53"
+  password           = "hchap***"
   skip_final_snapshot = true
   publicly_accessible = true
 
